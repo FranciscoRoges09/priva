@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+
+	<script>
+  window.pixelId = "68a03b7207ba3fa84498a661";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script> <script
+  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  data-utmify-prevent-xcod-sck
+  data-utmify-prevent-subids
+  async
+  defer
+></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Confirmação de Idade</title>
+  <meta name="description" content="Confirmação de idade - comunidade adulta. Você deve ter 18 anos ou mais.">
+  <style>
+    /* Reset simples */
+    *, *::before, *::after { box-sizing: border-box; }
+    html,body { height:100%; margin:0; font-family: Inter, Arial, sans-serif; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; }
+    body {
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background: linear-gradient(180deg,#ffffff 0%, #fafafa 100%);
+      color:#222;
+      padding:20px;
+    }
+
+    .card {
+      width:100%;
+      max-width:520px;
+      background:#fff;
+      border-radius:14px;
+      box-shadow: 0 8px 30px rgba(20,20,30,0.08);
+      padding:28px;
+      text-align:center;
+      border: 1px solid rgba(15,15,20,0.03);
+    }
+
+    .logo {
+      max-width:280px;
+      width:60%;
+      height:auto;
+      display:block;
+      margin-inline:auto;
+      margin-bottom:18px;
+    }
+
+    h1 {
+      font-size:20px;
+      margin:0 0 14px;
+      line-height:1.25;
+      color:#111;
+    }
+
+    p.lead {
+      margin:0 0 22px;
+      color:#444;
+      font-size:15px;
+    }
+
+    .actions {
+      display:flex;
+      gap:12px;
+      justify-content:center;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+
+    .btn {
+      display:inline-block;
+      text-decoration:none;
+      padding:12px 20px;
+      border-radius:10px;
+      font-weight:600;
+      font-size:15px;
+      cursor:pointer;
+      border:0;
+      user-select:none;
+    }
+
+    .btn-primary {
+      background:#ff6600;
+      color:#fff;
+      box-shadow: 0 6px 18px rgba(255,102,0,0.18);
+    }
+
+    .btn-secondary {
+      background:transparent;
+      color:#333;
+      border:1px solid rgba(0,0,0,0.08);
+    }
+
+    .note {
+      margin-top:18px;
+      font-size:13px;
+      color:#666;
+    }
+
+    /* mobile tweaks */
+    @media (max-width:420px){
+      .card { padding:18px; border-radius:12px; }
+      .logo { width:72%; max-width:220px; margin-bottom:12px; }
+      h1 { font-size:18px; }
+      .btn { width:100%; padding:12px; }
+      .actions { flex-direction:column; gap:10px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="card" role="main" aria-labelledby="title">
+    <!-- Substitua logo.png pelo caminho da sua imagem -->
+    <img class="logo" src="logo.png" alt="Logo do site" />
+
+    <h1 id="title">Este site contém material adulto — Confirmação de idade</h1>
+    <p class="lead">Você deve ter <strong>18 anos ou mais</strong> para entrar. Ao continuar você confirma que tem idade legal para acessar este conteúdo.</p>
+
+    <div class="actions" role="group" aria-label="Ações">
+      <!-- Botão identificável: id="enter-btn" e data-target com a página destino -->
+      <a id="enter-btn" class="btn btn-primary" href="/page/" data-target="page.html" aria-label="Tenho 18 anos ou mais — entrar">
+        TENHO 18 ANOS OU MAIS — ENTRAR
+      </a>
+
+      <!-- Botão secundário para sair/voltar -->
+      <a class="btn btn-secondary" href="https://www.google.com" aria-label="Sair — voltar">
+        SAIR
+      </a>
+    </div>
+
+    <p class="note">Observação: substitua <code>page.html</code> no atributo <code>href</code> ou em <code>data-target</code> pelo destino que desejar.</p>
+  </main>
+
+  <script>
+    // Script leve para demonstrar ação identificável (não necessário para o funcionamento do link)
+    (function(){
+      const enterBtn = document.getElementById('enter-btn');
+      if(!enterBtn) return;
+
+      // Exemplo: loga no console e redireciona conforme data-target (mantém href por acessibilidade)
+      enterBtn.addEventListener('click', function(e){
+        // se quiser bloquear e exigir checkbox, insira lógica aqui
+        const target = enterBtn.getAttribute('data-target') || enterBtn.href;
+        console.info('Usuário clicou em Entrar — target:', target);
+        // o navegador seguirá o href automaticamente; o script é só informativo
+      });
+    })();
+  </script>
+</body>
+</html>
